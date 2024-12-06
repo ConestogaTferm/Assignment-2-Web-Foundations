@@ -1,0 +1,258 @@
+/*Timur Fermand 7979362*/
+body {
+    max-width: 900px;
+    margin: auto;
+    font: 20px Arial,sans-serif;
+}
+
+.HeaderandFooter {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-image: linear-gradient(blue, green);
+}
+
+h1{
+    color: rgb(238, 255, 0);
+    font-variant: small-caps;
+}
+
+h2{
+    color: rgb(4, 0, 255);
+    font-variant: small-caps;
+}
+
+footer p {
+    color: red;
+    font-size: 10px;
+}
+
+.mainimg {
+    width: 560px;
+    height: 560px;
+    border: black solid 5px;
+}
+
+main section figure figcaption {
+    font-variant: small-caps;
+    font-weight: bold;
+}
+
+main section q {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 30px;
+}  
+
+aside ul li {
+    list-style-type: none;
+    line-height: 70px;
+}
+
+aside > ul > li > a {
+    text-decoration: none;
+    color: beige;
+    background-color: brown;
+}
+aside ul li a:hover {
+    color: aqua;
+}
+
+nav .flexnav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(195, 0, 255);
+    background-color: rgb(51, 220, 250);
+}
+
+nav ul li a:hover {
+    color: green;
+    background-color: rgb(76, 0, 255);
+}
+
+main table thead tr th {
+    border: black solid 5px;
+}
+
+.bodygrid {
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    grid-template-rows: 1fr, 1fr, 2fr, 1fr;
+    gap: 10px;
+}
+
+.bodygrid header {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.bodygrid nav {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 2;
+}
+
+.bodygrid main {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 3;
+    padding: 10px;
+    margin: 10px;
+}
+
+.bodygrid aside {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 3;
+    padding: 10px;
+    margin: 10px;
+    background-image: url(/images/side.jpg);
+    background-size: contain; 
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.bodygrid footer {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 4;
+}
+
+main table tbody tr td {
+    border: black solid 5px;
+}
+
+.galleryofimages {
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr);
+    grid-template-rows: 1fr, 1fr, 1fr);
+    gap: 5px;
+    width: 60%;
+    height: 60%;
+}
+
+.galleryofimages #gallery_images1 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1;
+    width: 200px;
+    height: 200px;
+}
+
+.galleryofimages #gallery_images2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 1;
+    width: 200px;
+    height: 200px;
+}
+
+.galleryofimages #gallery_images3 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 1;
+    width: 200px;
+    height: 200px;
+}
+
+.galleryofimages #gallery_images4 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+    width: 200px;
+    height: 200px;
+}
+
+.galleryofimages #gallery_images5 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 2;
+    width: 200px;
+    height: 200px;
+}
+
+.galleryofimages #gallery_images6 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 2;
+    width: 200px;
+    height: 200px;
+}
+
+.galleryofimages #gallery_images7 {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 3;
+    width: 200px;
+    height: 200px;
+}
+
+.galleryofimages #gallery_images8 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row: 3;
+    width: 200px;
+    height: 200px;
+}
+
+.galleryofimages #gallery_images9 {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row: 3;
+    width: 200px;
+    height: 200px;
+}
+
+nav ul li .navlistitemdrop {
+    display: none;
+}
+
+nav ul li .navlistitemdrop:hover {
+    display: block;
+    position: absolute;
+}
+
+main form {
+    border: black solid 5px;
+    padding: 5px;
+}
+
+main form .form_options {
+    padding: 10px;
+    margin: 10px;
+    border: black solid 5px;
+    text-align: center;
+} 
+
+@media all and (max-width: 1200px) {
+    body {
+        color: blue;
+    }
+    aside {
+        background-image: url(/images/side.jpg);
+        background-size: contain; 
+        background-repeat: no-repeat;
+    }
+}
+
+
+@media all and (max-width: 1500px) {
+    body {
+        color: rgb(0, 255, 76);
+    }
+    aside {
+        background-image: url(/images/side.jpg);
+        background-size: contain; 
+    }
+}
+    
